@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block main_content %}
+
+<h1 class="hello">Hi, {{ current_user.username }}!</h1>
+<h1 class="hello">{{user}} says:</h1>
+
+{% if not posts %}
+    <span class="message"> No items! </span>
+{% else %}
+{% for post in posts %}
+<article>
+    <h1 class="h1-article">{{post.title}}</h1>
+    <p class="article-content">
+        {{post.body}}
+    </p>
+</article>
+{% endfor %}
+{% endif %}
+{% endblock %}
+
+
+

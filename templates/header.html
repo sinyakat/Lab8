@@ -1,0 +1,12 @@
+<div class="container">
+    <a href="{{ url_for('index') }}"><img src="https://www.flaticon.com/svg/static/icons/svg/3468/3468075.svg" class="logo"></a>
+    <a href="/index"><span class="name">My webpage</span></a>
+    <ul class="RegisterBlock">
+        <a href="/register"><li class="register">Sign Up</li></a>
+        {% if current_user.is_anonymous %}
+        <a href="{{ url_for('login') }}"><li class="SignIn">Log in</li></a>
+        {% else %}
+        <a href="{{ url_for('logout') }}"><li class="LogOut">Log Out</li></a>
+        {% endif %}
+    </ul>
+</div>

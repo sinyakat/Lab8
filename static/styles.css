@@ -1,0 +1,168 @@
+body {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-color: rgba(90, 21, 122, 0.5);
+}
+
+.content {
+    width: 85%;
+    height: inherit;
+    margin: auto;
+}
+
+.container {
+    width: 85%;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.RegisterBlock {
+   position: absolute;
+    right: 0;
+}
+
+li {
+    display: inline-block;
+    float: right;
+    padding: 3px;
+    margin: 10px;
+    border: 3px solid #fff;
+    transition: all .4s ease;
+}
+
+li:hover {
+      box-shadow: 3px 3px rgb(164, 220, 222);
+}
+
+.logo {
+    width: 45px;
+    margin: 0;
+    padding: 10px;
+}
+
+.name {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;/*'Courier New', monospace;*/
+    font-weight: bold;
+    /*text-shadow: 1px 1px rgb(164, 220, 222);*/
+}
+
+.register {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+}
+
+.SignIn {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+}
+
+.LogOut {
+     color: #fff;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+}
+
+.Register-Block {
+    display: flex;
+}
+
+#footer {
+    background-color: rgba(90, 21, 122, 0.5);
+    margin: 0;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+}
+
+.message {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(164, 220, 222);
+}
+#main_content {
+    grid-row-start: 3;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    text-align: center;
+    background-color: rgba(246, 235, 169, .9);
+}
+
+.articles {
+    margin: 0;
+}
+
+article {
+    display: inline-block;
+    float: right;
+    padding: 3px;
+    margin: 10px;
+    border: 3px solid #fff;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    box-shadow: 3px 3px rgb(164, 220, 222);
+    grid-row-end: 12;
+}
+
+.article-content {
+    grid-row-end: 12;
+}
+
+.h1-article {
+    text-shadow: 2px 2px rgb(164, 220, 222);
+}
+
+.main {
+    background-color: rgba(246, 235, 169, .9);
+    grid-row-start: 3;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.hello {
+    font-size: 30px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    text-shadow: 2px 2px rgb(164, 220, 222);
+}
